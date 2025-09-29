@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms of Service</title>
+    <style>
+        :root {
+            --primary-blue: #1a6aa2;
+     --secondary-blue: #2c8ac4;
+     --light-blue: #e6f2f9;
+     --accent-green: #4caf50;
+     --dark-text: #333;
+     --light-text: #f8f9fa;
+     --gray-bg: #f5f7fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    color: white;
+    padding: 100px 20px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #f0f7ff, var(--light-blue));
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: white;
+    color: var(--primary-blue);
+    transform: translateX(-3px);
+}
+
+    /* Navigation */
+       .nav-tabs {
+    display: flex;
+    justify-content: center;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap; /* allow wrapping for smaller screens */
+}
+
+.nav-tab {
+    padding: 16px 32px;
+    font-weight: 600;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    border-radius: 0; /* default (desktop style) */
+}
+
+.nav-tab.active {
+    color: var(--primary-blue);
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.nav-tab:hover:not(.active) {
+    color: var(--secondary-blue);
+    background-color: var(--light-blue);
+}
+
+/* Mobile View - Pills */
+@media (max-width: 768px) {
+    .nav-tabs {
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 10px;
+        overflow-x: auto; /* horizontal scroll if too many pills */
+    }
+
+    .nav-tab {
+        padding: 10px 20px;
+        border: none; /* remove underline */
+        border-radius: 50px; /* pill shape */
+        background: var(--light-blue);
+        color: var(--primary-blue);
+        white-space: nowrap; /* prevent text wrapping */
+        font-size: 0.95rem;
+    }
+
+    .nav-tab.active {
+        background: var(--primary-blue);
+        color: white;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-tab:hover:not(.active) {
+        background: var(--secondary-blue);
+        color: white;
+    }
+}
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        .last-updated {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 32px;
+            display: block;
+        }
+
+        /* Content Styling */
+        .content-section h2 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin: 32px 0 16px;
+        }
+
+        .content-section h3 {
+            font-size: 1.25rem;
+            color: var(--primary-blue);
+            margin: 24px 0 12px;
+        }
+
+        .content-section p {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .content-section ul, .content-section ol {
+            margin: 16px 0 16px 32px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+        }
+
+        .content-section a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .content-section a:hover {
+            color: var(--secondary-blue);
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background-color: var(--light-blue);
+            border-left: 4px solid var(--primary-blue);
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .copyright {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 0 30px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h1>Legal & Policies</h1>
+        <p>Review our policies to understand how we protect your information and serve you better</p>
+    </div>
+</header>
+
+
+    <!-- Navigation -->
+    <nav class="nav-tabs">
+        <a href="#" class="nav-tab active" data-target="privacy-policy">Privacy Policy</a>
+        <a href="#" class="nav-tab" data-target="terms-of-service">Terms of Service</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="content-section active">
+            <h1 class="section-title">Privacy Policy</h1>
+            <span class="last-updated">Last updated: January 15, 2023</span>
+
+            <div class="highlight-box">
+                <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
+            </div>
+
+            <h2>Information We Collect</h2>
+            <p>We collect information to provide better services to all our users. The types of information we collect include:</p>
+            
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Contact information (name, email address, phone number)</li>
+                <li>Demographic information (age, gender, location)</li>
+                <li>Insurance information and policy details</li>
+                <li>Medical history and health-related information</li>
+            </ul>
+
+            <h3>Automatically Collected Information</h3>
+            <ul>
+                <li>Device information and identifiers</li>
+                <li>Log information (IP address, browser type, pages visited)</li>
+                <li>Cookies and similar technologies</li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+            <ol>
+                <li>To provide and maintain our services</li>
+                <li>To process insurance claims and payments</li>
+                <li>To communicate with you about appointments, services, and updates</li>
+                <li>To improve our services and develop new features</li>
+                <li>To comply with legal obligations</li>
+            </ol>
+
+            <h2>Information Sharing</h2>
+            <p>We do not sell your personal information. We may share your information with:</p>
+            <ul>
+                <li>Insurance providers for claim processing</li>
+                <li>Healthcare professionals involved in your care</li>
+                <li>Service providers who assist our operations</li>
+                <li>Legal authorities when required by law</li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access and review your personal information</li>
+                <li>Request corrections to inaccurate data</li>
+                <li>Request deletion of your personal information</li>
+                <li>Opt-out of marketing communications</li>
+                <li>Request a copy of your data in a portable format</li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>Email: privacy@healthcareprovider.com<br>
+            Phone: (555) 123-4567<br>
+            Address: 123 Healthcare Ave, Medical City, MC 12345</p>
+        </section>
+
+        <!-- Terms of Service Section -->
+        <section id="terms-of-service" class="content-section">
+            <h1 class="section-title">Terms of Service</h1>
+            <span class="last-updated">Last updated: January 15, 2023</span>
+
+            <div class="highlight-box">
+                <p>Please read these Terms of Service carefully before using our services. By accessing or using our services, you agree to be bound by these terms.</p>
+            </div>
+
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing and using our services, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+            <h2>Services Description</h2>
+            <p>We provide healthcare services including but not limited to:</p>
+            <ul>
+                <li>Medical consultations and examinations</li>
+                <li>Diagnostic services</li>
+                <li>Treatment planning and implementation</li>
+                <li>Insurance claim processing</li>
+                <li>Patient education and support</li>
+            </ul>
+
+            <h2>User Responsibilities</h2>
+            <p>As a user of our services, you agree to:</p>
+            <ol>
+                <li>Provide accurate and complete information</li>
+                <li>Keep your account credentials secure</li>
+                <li>Comply with all applicable laws and regulations</li>
+                <li>Respect our staff and other patients</li>
+                <li>Pay for services not covered by insurance in a timely manner</li>
+            </ol>
+
+            <h2>Appointments and Cancellations</h2>
+            <p>We require 24 hours notice for appointment cancellations. Late cancellations or no-shows may be subject to fees as outlined in our cancellation policy.</p>
+
+            <h2>Insurance and Payments</h2>
+            <p>While we work with various insurance providers, coverage is not guaranteed. Patients are responsible for understanding their insurance benefits and for any costs not covered by insurance.</p>
+
+            <h2>Intellectual Property</h2>
+            <p>All content included on our website and in our services, such as text, graphics, logos, and software, is the property of our company and protected by copyright laws.</p>
+
+            <h2>Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, our liability for any claim related to our services shall be limited to the amount paid for the services forming the basis of the claim.</p>
+
+            <h2>Termination</h2>
+            <p>We reserve the right to terminate or suspend access to our services immediately, without prior notice, for conduct that we believe violates these Terms of Service or is harmful to other users.</p>
+
+            <h2>Changes to Terms</h2>
+            <p>We reserve the right to modify these terms at any time. We will notify users of any material changes via email or through our services.</p>
+
+            <h2>Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the state where our main office is located, without regard to its conflict of law provisions.</p>
+
+            <h2>Contact Information</h2>
+            <p>If you have any questions about these Terms of Service, please contact us at:</p>
+            <p>Email: legal@healthcareprovider.com<br>
+            Phone: (555) 123-4567<br>
+            Address: 123 Healthcare Ave, Medical City, MC 12345</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy-policy" class="footer-link">Privacy Policy</a>
+                <a href="#terms-of-service" class="footer-link">Terms of Service</a>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="contact-us.html" class="footer-link">Contact Us</a>
+            </div>
+                <p>&copy; 2025 AHMED KAWAMH MD Community Care Wellness and Addiction Medicine.<br> All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        // Tab navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.nav-tab');
+            const sections = document.querySelectorAll('.content-section');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tabs and sections
+                    tabs.forEach(t => t.classList.remove('active'));
+                    sections.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding section
+                    this.classList.add('active');
+                    const targetId = this.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+            
+            // Footer link navigation
+            const footerLinks = document.querySelectorAll('.footer-link');
+            footerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // Update active tab and section
+                    tabs.forEach(t => t.classList.remove('active'));
+                    sections.forEach(s => s.classList.remove('active'));
+                    
+                    document.querySelector(`.nav-tab[data-target="${targetId}"]`).classList.add('active');
+                    document.getElementById(targetId).classList.add('active');
+                    
+                    // Scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

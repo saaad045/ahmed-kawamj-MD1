@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blogs - Advanced Internal Medicine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--custom css-->
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./img/logo-1.png" alt="Logo" height="80" class="me-2">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preventive-care.html">Preventive Care</a></li>
+                            <li><a class="dropdown-item" href="chronic-disease-management.html">Chronic Disease Management</a></li>
+                            <li><a class="dropdown-item" href="common-illnesses.html">Commom Illnesses</a></li>
+                            <li><a class="dropdown-item" href="womens-&-mens-health.html">Women's & Men's Health</a></li>
+                            <li><a class="dropdown-item" href="minor-injuries.html">Minor Injuries</a></li>
+                            <li><a class="dropdown-item" href="coordinated-care.html">Coordinated Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary1 text-white px-3 ms-2" href="contact-us.html">Book
+                            Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="heroBlog-title">Health Tips & Medical Insights</h1>
+                    <p class="heroBlog-subtitle">Stay informed with the latest health advice, medical research, and
+                        wellness tips from our team of internal medicine specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blogPageSection">
+        <div class="container">
+            <h2 class="blogPageSection-title">Latest Health Articles</h2>
+            <p class="blogPageSection-subtitle">Evidence-based medical information to help you make informed decisions
+                about your health.</p>
+
+            <!-- Filter Buttons -->
+            <div class="blogPage-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="prevention">Prevention</button>
+                <button class="category-btn" data-category="nutrition">Nutrition</button>
+                <button class="category-btn" data-category="fitness">Fitness</button>
+                <button class="category-btn" data-category="chronic">Chronic Conditions</button>
+            </div>
+
+            <div class="blogPage-grid">
+                <!-- Blog Card 1 -->
+                <div class="blogPage-card" data-category="prevention">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Prevention</span>
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80"
+                            alt="Preventive Health">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">5 Essential Health Screenings Every Adult Should Consider</h3>
+                        <p class="blogPage-excerpt">Preventive screenings can detect health issues early when they're
+                            most treatable. Learn which tests are recommended based on your age, gender, and family
+                            history.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="blogPage-card" data-category="nutrition">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Nutrition</span>
+                        <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=600&q=80"
+                            alt="Healthy Eating">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> June 10, 2023</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">The Mediterranean Diet: Science-Backed Benefits for Heart Health</h3>
+                        <p class="blogPage-excerpt">Discover how the Mediterranean diet can reduce your risk of heart
+                            disease, improve cholesterol levels, and promote overall wellness.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="blogPage-card" data-category="fitness">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Fitness</span>
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+                            alt="Exercise">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> June 5, 2023</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">Exercise for Busy Professionals: Effective Workouts in 30 Minutes
+                        </h3>
+                        <p class="blogPage-excerpt">Short on time? These efficient workout routines can help you stay
+                            active and healthy even with a packed schedule.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="blogPage-card" data-category="chronic">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Chronic Conditions</span>
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
+                            alt="Diabetes Management">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> May 28, 2023</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">Managing Type 2 Diabetes: New Approaches and Technologies</h3>
+                        <p class="blogPage-excerpt">Explore the latest advancements in diabetes management, from
+                            continuous glucose monitors to personalized treatment plans.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="blogPage-card" data-category="prevention">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Prevention</span>
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=600&q=80"
+                            alt="Sleep Health">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> May 20, 2023</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">The Importance of Sleep: How Quality Rest Impacts Your Health</h3>
+                        <p class="blogPage-excerpt">Learn why sleep is crucial for physical and mental health, and
+                            discover strategies for improving your sleep quality.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6-->
+                <div class="blogPage-card" data-category="nutrition">
+                    <div class="blogPage-image">
+                        <span class="blogPage-category">Nutrition</span>
+                        <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=600&q=80"
+                            alt="Gut Health">
+                    </div>
+                    <div class="blogPage-content">
+                        <div class="blogPage-meta">
+                            <span><i class="far fa-calendar"></i> May 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blogPage-title">Gut Health and Immunity: The Connection You Need to Know</h3>
+                        <p class="blogPage-excerpt">Discover how your gut microbiome influences your immune system and
+                            what you can do to support both through diet and lifestyle.</p>
+                        <a href="#" class="blogPage-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Weellness of the section-->
+    <section class="wellness-section">
+        <div class="container">
+            <h2 class="wellness-title">Wellness Tips of the Week</h2>
+            <p class="wellness-subtitle">Simple, actionable tips to improve your health and wellbeing every week.</p>
+
+            <div class="wellness-grid">
+                <!-- Tip 1 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Stay Hydrated</h3>
+                    <p class="wellness-tip-text">Drink at least 8 glasses of water daily to maintain energy, improve
+                        digestion, and boost concentration.</p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Daily Movement</h3>
+                    <p class="wellness-tip-text">Take a 30-minute walk or stretch daily to enhance circulation, reduce
+                        stress, and improve overall fitness.</p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Eat Mindfully</h3>
+                    <p class="wellness-tip-text">Include more fruits, vegetables, and whole grains in your meals. Focus
+                        on balanced nutrition for sustained energy.</p>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Prioritize Sleep</h3>
+                    <p class="wellness-tip-text">Aim for 7-9 hours of quality sleep to restore your body, enhance
+                        memory, and improve mood.</p>
+                </div>
+
+                <!-- Tip 5 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Mental Wellness</h3>
+                    <p class="wellness-tip-text">Practice mindfulness or meditation daily to reduce stress, improve
+                        focus, and support emotional health.</p>
+                </div>
+
+                <!-- Tip 6 -->
+                <div class="wellness-card">
+                    <div class="wellness-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="wellness-tip-title">Positive Habits</h3>
+                    <p class="wellness-tip-text">Spend time with loved ones and engage in hobbies you enjoy to boost
+                        happiness and reduce anxiety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section-->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Take the Next Step in Your Health Journey?</h2>
+            <p class="cta-subtitle">Schedule your appointment today and experience the Advanced Internal Medicine
+                difference.</p>
+
+            <div class="cta-buttons">
+                <a href="#appointment" class="btn btn-light">
+                    <i class="fas fa-calendar-check me-2"></i>Book an Appointment
+                </a>
+                <a href="tel:+15551234567" class="btn btn-appointment">
+                    <i class="fas fa-phone-alt me-2"></i>Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer position-relative">
+        <!-- Enhanced DNA Effect -->
+        <div class="dna-helix">
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+        </div>
+
+        <div class="container">
+            <!-- Top Row: Logo/Title + Buttons -->
+            <div class="footer-top d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <div class="footer-brand mb-4 mb-lg-0">
+                    <img src="./img/logo-1.png" alt="Advanced Internal Medicine Logo" height="80">
+                </div>
+                <div class="footer-actions">
+                    <a href="#appointment" class="btn btn-appointment">
+                        <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                    </a>
+                    <a href="tel:+15551234567" class="btn btn-call">
+                        <i class="fas fa-phone-alt me-2"></i>Call Us Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Links & Newsletter -->
+            <div class="row text-center text-lg-start">
+                <!-- About -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <p>
+                        Providing comprehensive, compassionate healthcare for adults with a focus on
+                        preventive medicine, chronic disease management, and overall well-being.
+                    </p>
+                    <div class="social-icons mt-4 d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Our Services</h5>
+                    <div class="footer-links">
+                        <a href="#">Preventive Care & Screenings</a>
+                        <a href="#">Chronic Disease Management</a>
+                        <a href="#">Diabetes & Hypertension Care</a>
+                        <a href="#">Cardiovascular Health</a>
+                        <a href="#">Geriatric & Adult Medicine</a>
+                        <a href="#">Women's Health</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3">
+                    <h5>Health Newsletter</h5>
+                    <p>Stay updated with health tips and the latest practice news.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email Address">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2023 Advanced Internal Medicine. All rights reserved. | <a href="#" class="text-muted">Privacy
+                        Policy</a> | <a href="#" class="text-muted">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const blogCards = document.querySelectorAll('.blogPage-card');
+
+            categoryButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active state from all buttons
+                    categoryButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-category');
+
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

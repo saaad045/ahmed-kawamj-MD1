@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Care - Advanced Internal Medicine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+ 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./img/logo-1.png" alt="Logo" height="80" class="me-2">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preventive-care.html">Preventive Care</a></li>
+                            <li><a class="dropdown-item" href="chronic-disease-management.html">Chronic Disease
+                                    Management</a></li>
+                            <li><a class="dropdown-item" href="common-illnesses.html">Commom Illnesses</a></li>
+                            <li><a class="dropdown-item" href="womens-&-mens-health.html">Women's & Men's Health</a>
+                            </li>
+                            <li><a class="dropdown-item" href="minor-injuries.html">Minor Injuries</a></li>
+                            <li><a class="dropdown-item" href="coordinated-care.html">Coordinated Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary1 text-white px-3 ms-2" href="contact-us.html">Book
+                            Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="Gender-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <h1 class="heroGender-title">Comprehensive Care Coordination</h1>
+                    <p class="heroGender-subtitle">
+                        Seamless integration of your healthcare services with a dedicated team managing all aspects of
+                        your medical care. </p>
+                    <a href="gender-health.html" class="btn btn-Preventive mb-4">
+                        <i class="fas fa-notes-medical me-2"></i> Start Your Care Plan
+                    </a>
+
+                    <div class="Gender-stats">
+                        <div class="Gender-stat">
+                            <span class="Gender-stat-number">98%</span>
+                            <span class="Gender-stat-label">Patient Satisfaction</span>
+                        </div>
+                        <div class="Gender-stat">
+                            <span class="Gender-stat-number">40%</span>
+                            <span class="Gender-stat-label">Fewer Hospitalizations</span>
+                        </div>
+                        <div class="Gender-stat">
+                            <span class="Gender-stat-number">3500+</span>
+                            <span class="Gender-stat-label">Patients Coordinated</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1675270745543-883eae091a5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHx3b21lbiUyMGFuZCUyMG1lbiUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Women's and Men's Health" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="Care-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="sectionCare-title">Your Central Hub for Healthcare</h2>
+                    <p class="sectionCare-subtitle">We simplify complex healthcare by coordinating all your medical
+                        services through a single, dedicated team.</p>
+
+                    <div class="Care-content">
+                        <p>At <span class="Care-highlight">Advanced Internal Medicine</span>, we understand that
+                            navigating the healthcare system can be challenging, especially when managing multiple
+                            conditions or seeing various specialists. Our care coordination service serves as your
+                            central hub, ensuring all aspects of your healthcare work together seamlessly.</p>
+
+                        <p class="mt-4">Our dedicated care coordinators work behind the scenes to manage appointments,
+                            facilitate communication between providers, ensure medication compatibility, and create a
+                            unified treatment plan tailored to your unique health needs. This comprehensive approach
+                            eliminates fragmentation and ensures you receive the right care at the right time.</p>
+
+                        <a href="#appointment" class="btn-schedule mt-4">Schedule Your Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="Care-benefits">
+        <div class="container">
+            <h2 class="sectionCare-title text-center">Benefits of Care Coordination</h2>
+            <p class="sectionCare-subtitle text-center">Experience healthcare that works together for your optimal
+                well-being.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="benefit-title">Streamlined Care</h3>
+                    <p class="benefit-description">All your healthcare services working together seamlessly.</p>
+                    <ul class="benefit-features">
+                        <li>Single point of contact for all providers</li>
+                        <li>Unified treatment plans</li>
+                        <li>Reduced duplicate testing</li>
+                        <li>Coordinated appointment scheduling</li>
+                        <li>Consistent follow-up care</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="benefit-title">Expert Navigation</h3>
+                    <p class="benefit-description">Guidance through complex healthcare decisions and systems.</p>
+                    <ul class="benefit-features">
+                        <li>Specialist referral management</li>
+                        <li>Insurance coordination</li>
+                        <li>Treatment option explanations</li>
+                        <li>Healthcare system navigation</li>
+                        <li>Advocacy during hospital stays</li>
+                    </ul>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="benefit-title">Medication Management</h3>
+                    <p class="benefit-description">Comprehensive oversight of all your medications.</p>
+                    <ul class="benefit-features">
+                        <li>Medication reconciliation</li>
+                        <li>Interaction monitoring</li>
+                        <li>Adherence support</li>
+                        <li>Prescription coordination</li>
+                        <li>Side effect management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="Care-process">
+        <div class="container">
+            <h2 class="sectionCare-title text-center">Our Care Coordination Process</h2>
+            <p class="sectionCare-subtitle text-center">A structured approach to ensuring all your healthcare needs are
+                met efficiently.</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Comprehensive Assessment</h3>
+                        <p class="step-description">We begin with a thorough evaluation of your health status, current
+                            treatments, providers, and personal goals to understand your complete healthcare picture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Care Plan Development</h3>
+                        <p class="step-description">Our team creates a personalized care coordination plan that
+                            addresses your specific needs, preferences, and health objectives.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Provider Communication</h3>
+                        <p class="step-description">We establish communication channels with all your healthcare
+                            providers to ensure everyone is working from the same information and treatment plan.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Ongoing Monitoring</h3>
+                        <p class="step-description">Your care coordinator regularly checks in to monitor your progress,
+                            address concerns, and adjust your care plan as needed.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Continuous Optimization</h3>
+                        <p class="step-description">We continuously evaluate and refine your care coordination to ensure
+                            it remains effective and responsive to your changing health needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="Care-team">
+        <div class="container">
+            <h2 class="sectionCare-title text-center" style="color: var(--text-lighter);">Your Care Coordination Team
+            </h2>
+            <p class="sectionCare-subtitle text-center">Dedicated professionals working together to manage your
+                healthcare journey.</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="team-title">Primary Care Physician</h3>
+                    <p class="team-description">Your main doctor who oversees your overall health and serves as the
+                        leader of your care team.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3 class="team-title">Care Coordinator</h3>
+                    <p class="team-description">Your dedicated point person who manages appointments, communications,
+                        and care plan implementation.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 class="team-title">Pharmacist</h3>
+                    <p class="team-description">Medication expert who ensures all your prescriptions work together
+                        safely and effectively.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="team-title">Specialists</h3>
+                    <p class="team-description">Expert physicians for specific conditions, all coordinated through your
+                        care team.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="team-title">Nutritionist</h3>
+                    <p class="team-description">Provides personalized diet and nutrition guidance to support your health
+                        goals and recovery plans.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="team-title">Physical Therapist</h3>
+                    <p class="team-description">Helps improve mobility, strength, and recovery through customized
+                        exercise and therapy programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="Care-technology">
+        <div class="container">
+            <h2 class="sectionCare-title">Technology-Enabled Coordination</h2>
+            <p class="sectionCare-subtitle">Advanced tools that keep your care team connected and informed.</p>
+
+            <div class="tech-content">
+                <div class="tech-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=600&q=80"
+                        alt="Care Coordination Technology">
+                </div>
+                <div class="tech-details">
+                    <p>Our care coordination is powered by advanced technology that ensures seamless communication and
+                        information sharing among your healthcare providers while maintaining the highest standards of
+                        privacy and security.</p>
+
+                    <ul class="tech-features">
+                        <li class="tech-feature">
+                            <div class="tech-icon">
+                                <i class="fas fa-laptop-medical"></i>
+                            </div>
+                            <div class="tech-text">
+                                <h4>Electronic Health Records</h4>
+                                <p>Secure, centralized digital records accessible to all authorized providers in your
+                                    care team.</p>
+                            </div>
+                        </li>
+
+                        <li class="tech-feature">
+                            <div class="tech-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="tech-text">
+                                <h4>Patient Portal</h4>
+                                <p>24/7 access to your health information, test results, and secure messaging with your
+                                    care team.</p>
+                            </div>
+                        </li>
+
+                        <li class="tech-feature">
+                            <div class="tech-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="tech-text">
+                                <h4>Secure Communication</h4>
+                                <p>Encrypted messaging and video consultations that protect your privacy while
+                                    connecting you with providers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="Care-specialties">
+        <div class="container">
+            <h2 class="sectionCare-title">Specialized Care Coordination</h2>
+            <p class="sectionCare-subtitle">Tailored coordination services for specific healthcare needs.</p>
+
+            <div class="specialties-container">
+                <div class="specialties-image">
+                    <img src="https://images.unsplash.com/photo-1584467735871-8db9ac8e5e3a?auto=format&fit=crop&w=600&q=80"
+                        alt="Specialized Care Coordination">
+                </div>
+                <div class="specialties-content">
+                    <p>We offer specialized care coordination approaches designed for specific health situations and
+                        populations, ensuring each patient receives the most appropriate and effective coordination
+                        services.</p>
+
+                    <div class="specialties-grid">
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="specialty-name">Chronic Conditions</div>
+                        </div>
+
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="specialty-name">Cardiac Care</div>
+                        </div>
+
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-wheelchair"></i>
+                            </div>
+                            <div class="specialty-name">Geriatric Care</div>
+                        </div>
+
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div class="specialty-name">Maternity Care</div>
+                        </div>
+
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-procedures"></i>
+                            </div>
+                            <div class="specialty-name">Surgical Coordination</div>
+                        </div>
+
+                        <div class="specialty-item">
+                            <div class="specialty-icon">
+                                <i class="fas fa-hospital-user"></i>
+                            </div>
+                            <div class="specialty-name">Hospital Transition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="Care-testimonials">
+        <div class="container">
+            <h2 class="sectionCare-title text-center">Patient Experiences</h2>
+            <p class="sectionCare-subtitle text-center">Hear from patients who have benefited from our care coordination
+                services.</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"After my heart surgery, I was seeing multiple specialists and taking
+                        several medications. The care coordination team made sure all my doctors were on the same page
+                        and that my medications worked together safely. It took so much stress out of my recovery."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Robert Johnson</h4>
+                            <p>Cardiac Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Managing my diabetes, high blood pressure, and arthritis was
+                        overwhelming until I started with care coordination. Now I have one person who helps schedule
+                        all my appointments and makes sure my treatments don't conflict. It's been life-changing."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Maria Gonzalez</h4>
+                            <p>Chronic Condition Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"When my mother was diagnosed with dementia, we were lost in the
+                        healthcare system. The care coordinator became our guide, arranging appointments, communicating
+                        with specialists, and helping us understand the treatment plan. We couldn't have navigated this
+                        without them."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>David Chen</h4>
+                            <p>Family Caregiver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Banner Section -->
+    <section id="insurance" class="insurance-section">
+        <div class="container">
+            <h2 class="section-title text-center" style="color: var(--primary-blue);">Insurances We Accept</h2>
+            <p class="section-subtitle text-center">We work with leading insurance providers to ensure seamless care for you and your family.</p>
+
+            <div class="insurance-slider">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Aetna_logo.png" alt="Aetna">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/BlueCross_BlueShield_logo.svg" alt="Blue Cross Blue Shield">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Cigna_logo.svg" alt="Cigna">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/UnitedHealthcare_logo.svg" alt="United Healthcare">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Humana_logo.svg" alt="Humana">
+                    </div>
+
+                    <!-- Repeat logos for seamless scrolling -->
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Aetna_logo.png" alt="Aetna">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/BlueCross_BlueShield_logo.svg" alt="Blue Cross Blue Shield">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Cigna_logo.svg" alt="Cigna">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/UnitedHealthcare_logo.svg" alt="United Healthcare">
+                    </div>
+                    <div class="slider-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Humana_logo.svg" alt="Humana">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="insurance-cta">
+                <p class="cta-text">Don't see your insurance provider? Contact us to verify coverage.</p>
+                <a href="#contact" class="cta-button">Verify Your Insurance</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PReventive Faq-->
+<section class="preventive-faq-section">
+    <div class="container">
+
+        <!-- Intro Banner -->
+        <div class="faq-intro text-center">
+            <div class="faq-icon">
+                <i class="fas fa-stethoscope"></i>
+            </div>
+            <h2 class="sectionPreventive-title">Got Questions? We’ve Got Answers</h2>
+            <p class="sectionPreventive-subtitle">
+                Explore our most frequently asked questions about coordinated care — clear, simple, and designed to guide your healthcare journey.
+            </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="preventive-faq">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is coordinated care and why is it important?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Coordinated care is a comprehensive approach where your healthcare providers work together to ensure all aspects of your treatment are aligned. It helps prevent overlapping treatments, reduces medical errors, and ensures you receive timely, effective care.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Who is involved in my coordinated care team?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Your coordinated care team may include your primary care physician, specialists, nurses, pharmacists, and care coordinators. Each member communicates and collaborates to create a unified, personalized care plan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How does coordinated care help with managing multiple conditions?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Coordinated care ensures all your conditions are managed together. Your care team monitors medications, appointments, and treatments to reduce conflicts, prevent complications, and maintain your overall health efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can my insurance support coordinated care?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Many insurance plans support coordinated care by covering visits, screenings, and care management services. Check with your provider to see which services are included under your plan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section section-padding">
+        <div class="container">
+            <div class="appointment-card">
+                <h2 class="sectionPreventive-title">Join Thousands Who’ve Improved Their Health!</h2>
+                <p class="lead mb-4">
+                    Trusted by hundreds of patients, our internal medicine specialists guide you with **evidence-based
+                    advice** tailored to your lifestyle. Book a consultation today and be part of the wellness movement.
+                </p>
+                <button class="appointment-btn">Schedule My Appointment</button>
+
+                <!-- Pulsing Background Effects -->
+                <span class="pulse pulse-1"></span>
+                <span class="pulse pulse-2"></span>
+                <span class="pulse pulse-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer position-relative">
+        <!-- Enhanced DNA Effect -->
+        <div class="dna-helix">
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+            <div class="base"></div>
+        </div>
+
+        <div class="container">
+            <!-- Top Row: Logo/Title + Buttons -->
+            <div class="footer-top d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <div class="footer-brand mb-4 mb-lg-0">
+                    <img src="./img/logo-1.png" alt="Advanced Internal Medicine Logo" height="80">
+                </div>
+                <div class="footer-actions">
+                    <a href="contact-us.html" class="btn btn-appointment">
+                        <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                    </a>
+                    <a href="tel: 347-213-8990" class="btn btn-call">
+                        <i class="fas fa-phone-alt me-2"></i>Call Us Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Links & Newsletter -->
+            <div class="row text-center text-lg-start">
+                <!-- About -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <p>
+                        Providing comprehensive, compassionate healthcare for adults with a focus on
+                        preventive medicine, chronic disease management, and overall well-being.
+                    </p>
+                    <div class="social-icons mt-4 d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="testimonials.html">Testimonials</a>
+                        <a href="contact-us.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Our Services</h5>
+                    <div class="footer-links">
+                        <a href="preventive-care.html">Preventive Care</a>
+                        <a href="chronic-disease-management.html">Chronic Disease Management</a>
+                        <a href="common-illnesses.html">Common Illnesses</a>
+                        <a href="womens-&-mens-health.html">Womens & Mens Health</a>
+                        <a href="minor-injuries.html">Minor Injuries</a>
+                        <a href="coordinated-care.html">Coordinated Care</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3">
+                    <h5>Health Newsletter</h5>
+                    <p>Stay updated with health tips and the latest practice news.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email Address">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2025 AHMED KAWAMH MD Community Care Wellness and Addiction Medicine.<br> All rights reserved.|
+                    <a href="privacy-policy-&-terms-of-services.html" class="text-muted">Privacy Policy & Terms of Service
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom JS-->
+    <script src="./javascript/script.js"></script>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle("active");
+
+                // Close others if you want only one open at a time
+                document.querySelectorAll(".faq-item").forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
